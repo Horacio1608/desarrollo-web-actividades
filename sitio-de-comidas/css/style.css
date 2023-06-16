@@ -3,51 +3,82 @@ font-family: 'Noto Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
 body{
-    width:90vw;
+    width:100vw;
     font-family: 'Roboto', sans-serif;
     align-items: center;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: content-box;
+    
 }
 
 .contenedor{
     background-color: rgb(219, 218, 218);
     display:flex;
-    flex-direction: row;
-    flex-grow: 2;
-    margin: 10px;
+    flex-direction:row;
+    height: 100vh;
 }
 
-.contenedor.lateral{
+.lateral{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    max-width: 30vw;
+    padding: 10px;
+}
+
+.logo{
+    border-radius: 50%;
+    max-width: 25vw;
+}
+
+.enlaces{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;    /*quita la viñeta*/
+    display: flex;            /*aplico flexbox*/
+    flex-direction: column;   /*direccion de los items en columnas*/
+    align-items: center;      /*aliño las cajas*/
+    text-align: center;       /*aliño el texto de las cajas*/
+    size: 2rem;               /*tamaño responsivo*/   
+    margin-top: 10px;
+    color:black;
+}
+
+.enlaces li{
+    margin-top: 15px;
+}
+.principal{
     display:flex;
     flex-direction: column;
-    
-    background-color: lightblue;
-    
     padding: 10px;
-    border: 10px;
-}
-
-.contenedor .lateral .logo{
-    border-radius: 50%;
-    padding:10px
-
-}
-
-.enlaces a{
-    font-size: 2rem;
-    text-decoration-line: none;
-}
-
-
-
-.principal{
-    flex-grow: 10;
     background-color: rgb(219, 218, 218);
-    height: 100vh;
-    padding: 15px;
+    height: auto;
+    width:70vw;
 }
 
 .cocineros{
-    flex-grow: 10;
+    
     width: 100%;
     background-color: blueviolet;
+}
+
+main .descripcion{
+    display: flex;
+    background-color: aquamarine;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.principal .articulos{
+    display: flex;
+    margin: 5px;
+    margin-top: 10px;
+
+}
+
+.principal .articulos .art1{
+    width: 32%;
+    padding: 5px;
+
 }

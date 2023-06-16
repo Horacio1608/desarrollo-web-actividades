@@ -1,0 +1,71 @@
+body{
+    background-color: lightgrey;
+}
+
+header{
+    background-color: grey;
+    display: flex;       /*activa flexbox*/
+    height: 20vh;
+
+}
+
+header .logo{
+    padding: 10px;
+    width: 20%;
+    background-image: url(./logo.png);
+    background-position: center;
+    background-size: cover;
+}
+
+header nav{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista{
+    padding: 0px;
+    list-style-type: none;  /*quita la viñeta*/
+    display: flex;  /*organiza lineal*/
+}
+
+.lista li{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.lista li:hover{
+    border-color: blueviolet;
+    color:violet;
+}
+
+.flotante{
+    position:fixed; /*posicion fija*/
+    right: 5px;
+    bottom: 10px;
+    height: 50vh;
+    width: 80px;
+}
+
+.flotante button{
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    border-radius: 100%;
+}
+
+.material-symbols-outlined{
+    color: white;
+    font-size: 30px;
+}
+
+.material-symbols-outlined:hover{
+    color: green;
+}
+
+.flotante button:hover{
+    background-color: white;
+}
+

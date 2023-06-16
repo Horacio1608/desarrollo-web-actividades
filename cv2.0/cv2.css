@@ -3,6 +3,7 @@
 body{
     background-color: bisque;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
 }
 
 h2{
@@ -13,21 +14,16 @@ h2{
 
 header{
     background-color: #110202;
-    text-decoration-line: underline;
     text-align: center;
     font-size: large;
     color: #f2f2f2;
     padding: 15px;
     border-radius: 5px;
     margin: 15px;
-    transition: background-color .3s
-    width: 90%;
+    transition: background-color .3s;
     font-family: 'Bangers';
 }
 
-.header:hover {
-    scale: 1 1.5;
-}
 .datos{
     background-color: #fff;
     width: 90%;
@@ -90,12 +86,18 @@ header{
 
 footer{
     background-color: #110202;
-    width: 100%;
     height: auto;
-    margin: 10px;
+    margin: 15px;
     padding: 10px;
     text-align: center;
     color: #fff;
     font-size: .8em;
+    border-radius: 5px;
+}
 
+.nombre:hover{
+    color: rebeccapurple;
+    font-style: italic;
+    text-decoration-line: underline;
+    font-
 }
