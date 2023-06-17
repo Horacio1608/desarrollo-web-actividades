@@ -1,0 +1,28 @@
+*{
+    background-color: gray;
+    width: 90vw;
+    border: 0px;
+    margin:auto
+}
+
+body header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    background-color: darkslateblue;
+    height: 10vh;
+    width: 100%;
+}
+.imagen-header{
+    background-image: url(./image/logo2.png);
+    background-size: cover;
+    background-position: center top ;
+    position: relative;
+}
+
+body header nav ul{
+    display: inline-block;
+    list-style: none;
+    text-align: right;
+    
+}
