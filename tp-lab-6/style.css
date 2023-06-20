@@ -10,28 +10,51 @@ body{
   /* inicia el header*/
 header{
     display: flex;
-    flex-direction: row;
-    background-color: darkslateblue;
-    height: 10vh;
+    background-color: #239cad;
+    height: 15vh;
     width: 100%;
     
 }
-body header nav ul{
-    list-style: none;
-    align-items:center;
-    background-color: red;
-}
+
 .logo{
-    width: 100px;
-    height: 10vh;
+    width: 15%;
+    height: 15vh;
     background-image: url(./image/logo1.jpeg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 header nav {
+    display:flex;
+    justify-content: end;
+    align-content:end;
+    align-items: center;
     width: 80%;
 }
 
+header nav ul{
+    list-style-type: none;
+    display: inline-block; 
+    list-style-type: none;
+    display: flex;  
+}
+
+header nav ul li{
+    margin-right: 30px;
+}
+
+header nav ul li a{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    text-decoration:none ;
+}
+
+header nav ul li a:hover{
+    font-size: 2.2rem;
+    color:blueviolet;
+    cursor:pointer;
+    font-style: italic;
+}
 
 /* inicia el main*/
 main{
