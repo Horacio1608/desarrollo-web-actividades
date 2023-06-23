@@ -1,11 +1,20 @@
+/*
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+*/
+
 
 body{
     display: flex;
     flex-direction: column;
     width: 90vw;
     margin: auto;
-    background-color: grey;
+    background-color: rgb(240, 236, 236);
     box-sizing: border-box;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-family: 'Roboto Mono', monospace;
   }
   /* inicia el header*/
 header{
@@ -13,7 +22,7 @@ header{
     background-color: #239cad;
     height: 15vh;
     width: 100%;
-    
+    border-radius: 5px;
 }
 
 .logo{
@@ -36,6 +45,8 @@ header nav ul{
     display: inline-block; 
     list-style-type: none;
     display: flex;  
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bolder;
 }
 
 header nav ul li{
@@ -43,24 +54,24 @@ header nav ul li{
 }
 
 header nav ul li a{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #000;
     text-decoration:none ;
 }
 
 header nav ul li a:hover{
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     color:blueviolet;
     cursor:pointer;
-    font-style: italic;
+   
 }
 
 /* inicia el main*/
 main{
   
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     margin: 10px 0px;
@@ -73,21 +84,102 @@ main .one{
     height: 70%;
     background-color: #f7e5ce;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 50% 50%;
     gap: 5px;
-    
+    border-radius: 5px;
+    padding: 5px;
 }
 
-
+main .one div{
+    border-radius: 5px;
+    
+}
 main .one .div-c{
     grid-row: 1 / span 2;  /*ver este temas mas detenidamente*/
     grid-column: 3;
 }
 
-main .one div{
-    border-radius: 5px;
-    background-color: aliceblue;
 
+
+/*           tarjetas de la primera seccion       */
+
+main .one .div-a, main .one .div-b, main .one .div-d, main .one .div-e{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+main .one .div-a .card-image, main .one .div-b .card-image, main .one .div-d .card-image, main .one .div-e .card-image{
+    width: 65%;
+    height: 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    background-size: cover;
+    
+}
+/*                Imagenes de card primera seccion          */
+main .one .div-a .card-image{
+    background-image: url(./image/norte.jpeg);
+}
+
+main .one .div-b .card-image{
+    background-image: url(./image/caba.jpeg);
+}
+
+main .one .divlarge .card-image{
+    background-image: url(./image/mdp.jpeg);
+}
+
+main .one .div-d .card-image{
+    background-image: url(./image/sur.jpeg);
+}
+
+main .one .div-e .card-image{
+    background-image: url(./image/playa.jpeg);
+}
+
+main .one .div-a .card-desc, main .one .div-b .card-desc, main .one .div-d .card-desc, main .one .div-e .card-desc{
+    box-sizing: border-box;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 3px;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 0.6em;  
+}
+
+.main .one .div-a .card-desc .city, .main .one .div-b .card-desc .city, .main .one .div-d .card-desc .city, .main .one .div-e .card-desc .city{
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px;
+    overflow: visible;
+}
+.precio{
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    margin: 5px 0px;
+} 
+.carr{
+    background-color: gold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .one .divlarge .card-image{
+    width: 100%;
+    height: 70%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    background-size: cover;
 }
 
 /*segunda seccion del main*/
@@ -104,54 +196,42 @@ main .two{
     border-radius: 5px;
 }
 
-/*tarjetas de la segunda seccion*/
-main .two .div-f{
+/*         tarjetas de la segunda seccion       */
+main .two .div2-f{
     background-image: url(./image/catarata.jpeg);
     background-size: cover;
     border-radius: 5px;
+    position: relative
+}
+main .two .div2-f DIV{
+    display: none;
 }
 
-main .two .div-g{
+ 
+  
+main .two .div2-g{
     background-image: url(./image/montana.jpeg);
     background-size: cover;
     border-radius: 5px;
 }
-main .two .div-h{
+main .two .div2-h{
     background-image: url(./image/paraiso.jpeg);
     background-size: cover;
     border-radius: 5px;
 }
-main .two .div-i{
+main .two .div2-i{
     background-image: url(./image/playa.jpeg);
     background-size: cover;
     border-radius: 5px;
 }
 
-/*tarjetas de la primera seccion*/
-main .one .div-a{
-    display: flex;
-    flex-direction: row;
+main .two .div2-f:hover, main .two .div2-g:hover, main .two .div2-h:hover, main .two .div2-i:hover{
+    transform: scale(1.2,1.2) ;
+    transition:.4s ease all;
+    cursor: pointer;
+    
 }
-
-main .one .div-a .card-image{
-    width: 70%;
-    height: 100%;
-    background-image: url(./image/norte.jpeg);
-    background-repeat: no-repeat;
-    border-radius: 5px 0px 0px 5px;
-    background-size: cover;
-}
-
-main .one .div-a .card-desc{
-    width: 30%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(191, 245, 160);
-}
-
-
-/*footer*/
+  /*footer*/
 footer{
    
     background-color: black;
@@ -159,17 +239,25 @@ footer{
     height: 10vh;
     display: flex;
     flex-direction: row;
+    border-radius: 5px;
 }
 
 footer form{
-    width: 50%;
-    background-color: yellow;
+    width: 70%;
+    background-color: #239cad;
     height: 10vh;
-    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    font-size: 12px;
+    padding: 0px 5px;
 }
 
 footer .redes{
-    width: 50%;
-    background-color: yellowgreen;
+    width: 30%;
+    background-color: #239cad;
     height: 10vh;
 }
