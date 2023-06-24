@@ -31,13 +31,14 @@ header{
     background-image: url(./image/logo1.jpeg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    border-radius: 5px;
 }
 header nav {
     display:flex;
     justify-content: end;
     align-content:end;
     align-items: center;
-    width: 80%;
+    width: 85%;
 }
 
 header nav ul{
@@ -64,7 +65,13 @@ header nav ul li a:hover{
     font-size: 1.8rem;
     color:blueviolet;
     cursor:pointer;
-   
+    border-bottom: 2px solid blueviolet;
+    transition:.4s;
+    
+}
+
+ header nav img {
+    position: absolute
 }
 
 /* inicia el main*/
@@ -84,18 +91,19 @@ main .one{
     height: 70%;
     background-color: #f7e5ce;
     display: grid;
-    grid-template-columns: 32% 32% 32%;
+    grid-template-columns: 33% 33% 33%;
     grid-template-rows: 50% 50%;
     gap: 5px;
     border-radius: 5px;
     padding: 5px;
+    box-sizing: border-box;
 }
 
 main .one div{
     border-radius: 5px;
     
 }
-main .one .div-c{
+main .one .divlarge{
     grid-row: 1 / span 2;  /*ver este temas mas detenidamente*/
     grid-column: 3;
 }
@@ -139,7 +147,7 @@ main .one .div-e .card-image{
     background-image: url(./image/playa.jpeg);
 }
 
-main .one .div-a .card-desc, main .one .div-b .card-desc, main .one .div-d .card-desc, main .one .div-e .card-desc{
+ main .one .div-a .card-desc, main .one .div-b .card-desc, main .one .div-d .card-desc, main .one .div-e .card-desc{
     box-sizing: border-box;
     width: 35%;
     display: flex;
@@ -151,10 +159,22 @@ main .one .div-a .card-desc, main .one .div-b .card-desc, main .one .div-d .card
     font-size: 0.6em;  
 }
 
-.main .one .div-a .card-desc .city, .main .one .div-b .card-desc .city, .main .one .div-d .card-desc .city, .main .one .div-e .card-desc .city{
+main .one .divlarge .card-desc{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 3px;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 0.6em;   
+}
+
+.main .one .divlarge .card-desc .city, .main .one .div-b .card-desc .city, .main .one .div-d .card-desc .city, .main .one .div-e .card-desc .city{
     flex-grow: 1;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    /*overflow: hidden;
+    text-overflow: ellipsis;*/
     padding: 5px;
     overflow: visible;
 }
@@ -165,18 +185,34 @@ main .one .div-a .card-desc, main .one .div-b .card-desc, main .one .div-d .card
     justify-content: center;
     cursor:pointer;
     margin: 5px 0px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: medium;
+    font-weight: bold;
 } 
 .carr{
-    background-color: gold;
+    background-color: #239cad;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    
 }
 
+.carr:hover{
+    background-color: rgb(3, 76, 184);
+    color: aliceblue;
+}
+
+.precio:hover{
+    background-color: rgb(1, 39, 1);
+    color: aliceblue;
+}
 main .one .divlarge .card-image{
     width: 100%;
-    height: 70%;
+    height: 50%;
     background-repeat: no-repeat;
     border-radius: 5px;
     background-size: cover;
@@ -202,12 +238,9 @@ main .two .div2-f{
     background-size: cover;
     border-radius: 5px;
     position: relative
-}
-main .two .div2-f DIV{
-    display: none;
+    
 }
 
- 
   
 main .two .div2-g{
     background-image: url(./image/montana.jpeg);
@@ -254,10 +287,47 @@ footer form{
     flex-wrap: nowrap;
     font-size: 12px;
     padding: 0px 5px;
+    border-radius: 5px;
 }
 
+footer form input{
+    margin: 0px 15px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: medium;
+
+}
+
+footer form i{
+    font-size: 2em;
+    border: 0px 10px;
+}
 footer .redes{
     width: 30%;
     background-color: #239cad;
     height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    size: 30px;
+}
+
+.redes{
+    color:#fff ;
+    text-align:center;
+    flex-direction: row;
+    align-items: center;
+   font-size: 2em;
+    
+}
+
+footer form input:hover{
+    background-color: blanchedalmond;
+    cursor: pointer;
+
+}
+
+.redes:hover{
+    font-size: 2.5em;
+    transition:.3s ease all;
+    cursor: pointer;
 }
