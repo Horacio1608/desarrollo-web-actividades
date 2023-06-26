@@ -10,17 +10,16 @@ font-family: 'Roboto', sans-serif;
 
 body{
     margin: auto;
-    width:100vw;
+    width:90vw;
     font-family: 'Roboto', sans-serif;
     align-items: center;   
 }
 
 .contenedor{
     margin: auto;
-    background-color: rgb(219, 218, 218);
     display:flex;
     flex-direction:row;
-    height: 100vh;
+    height: 96vh;
 }
 
 .lateral{
@@ -32,9 +31,20 @@ body{
     margin-left: 15px;
 }
 
+.enlaces li{
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
+  
+}
+
 .logo{
     border-radius: 50%;
     max-width: 25vw;
+    border: 2px solid black;
 }
 
 .enlaces{
@@ -48,17 +58,33 @@ body{
     size: 2rem;               /*tamaño responsivo*/   
     margin-top: 10px;
     color:black;
-
+    justify-content: center;
+      
 }
-
-.enlaces li{
+.enlaces li {
+    display: flex;
+    /*align-items: center;*/
     margin-top: 25px;
     text-decoration: none;
+    border: 1px solid black;
+    width: 90%;
+    border-radius: 5px;
+    
 }
 
-.enlaces li span{
-    
+.enlaces li:hover{
+    background-color: rgb(247, 205, 68);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+  
+  .enlaces li span {
+    margin-right: 5px; 
+    color:black
+}
 
+.enlaces li a{
+    text-decoration-line: none;
+    color:black;
 }
 .principal{
     display:flex;
