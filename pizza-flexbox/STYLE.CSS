@@ -1,0 +1,85 @@
+*{
+    margin: auto;
+}
+
+header{
+    height: 15vh;
+    background-color: red;
+    width: 100vw;
+    display: flex;
+}
+header div img{
+    height: 15vh;
+    width: 12vw;
+}
+
+header nav{
+    width: 88vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+header nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+header nav ul li a {
+   color:black;
+   text-decoration:none ;
+   padding : 4%;
+   margin: auto;
+   font-size: large;
+   font-weight: bolder;
+   margin-right: 3vw;
+ }
+
+ header nav ul li a:hover{
+    border: 1px solid gold;
+    border-radius: 5px;
+    color: gold;
+    transition: 1 sec;
+ }
+
+ footer{
+    background-color: red;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+
+ }
+
+ main{
+    display: flex;
+    height: 70vh;
+ }
+.flotante{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+   
+}
+
+.flotante button{
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    border-radius: 50px;
+    border: none;
+}
+
+.flotante button i{
+    color: white;
+    font-size: 30px;
+}
+
+.flotante button:hover{
+    background-color: white;
+}
+
+.flotante button:hover >i{
+    color: green;
+}
