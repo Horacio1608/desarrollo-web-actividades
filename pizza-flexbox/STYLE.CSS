@@ -33,7 +33,7 @@ header nav ul li{
 }
 
 header nav ul li a {
-   color:black;
+   color:white;
    text-decoration:none ;
    padding : 4%;
    margin: auto;
@@ -52,36 +52,85 @@ header nav ul li a {
  .card{
     width:200px;
     height: 250px;
-    border: 1px solid red;
+    border: 1px solid #0c0000;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
-    margin: 10px;
+    margin: 30px 30px;
  }
 
  .card .image{
     width:200px;
-    height: 150px;
+    height: 50%;
     border-radius: 5px 5px 0px 0px;
     background-image: url(./IMAGE/calabresa.jpeg);
     background-size: cover;
  }
 
+ .card .image1{
+    width:200px;
+    height: 50%;
+    border-radius: 5px 5px 0px 0px;
+    background-image: url(./IMAGE/muzza.jpeg);
+    background-size: cover;
+ }
+
+ .card .image2{
+    width:200px;
+    height: 50%;
+    border-radius: 5px 5px 0px 0px;
+    background-image: url(./IMAGE/napo.jpeg);
+    background-size: cover;
+ }
+
+ .card .image3{
+    width:200px;
+    height: 50%;
+    border-radius: 5px 5px 0px 0px;
+    background-image: url(./IMAGE/veggie.jpeg);
+    background-size: cover;
+ }
+
+ .card .image4{
+    width:200px;
+    height: 50%;
+    border-radius: 5px 5px 0px 0px;
+    background-image: url(./IMAGE/fugazzeta.jpeg);
+    background-size: cover;
+}
+
+.card .image5{
+    width:200px;
+    height: 50%;
+    border-radius: 5px 5px 0px 0px;
+    background-image: url(./IMAGE/armala.jpeg);
+    background-size: cover;
+}
 .card .titulo{
-    height: 70px;
+    height: 30%;
     width: 200px;
-    background-color: burlywood;
+    background-color: #fcc277;
     text-align: center;
 }
 
 .card .precio{
-    height: 30px;
+    height: 20%;
     width: 200px;
-    background-color: aquamarine;
+    background-color: rgb(137, 248, 109);
     text-align: center;
     border-radius:0px 0px 5px 5px ;
+    align-items: center;
+    display: flex;
 }
+
+.card .precio:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+    font-weight: bold;
+    
+}
+
  footer{
     background-color: red;
     height: 10vh;
@@ -93,9 +142,9 @@ header nav ul li a {
 
  main{
     display: flex;
-    height: 75vh;
+    height: auto;
     width: 100vw;
-    flex-wrap: norap;
+    flex-wrap: wrap;
     flex-direction: row;
  }
 .flotante{
