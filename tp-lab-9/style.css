@@ -1,0 +1,98 @@
+
+
+.container-fluid img{
+    height: 10vh;
+    
+}
+
+.row .r1{
+    display: flex;
+    justify-content: space-around;
+}
+.campera{
+    background-image: url(./image/campera.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-x: center;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+.camperab2{
+    background-image: url(./image/campera2.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-x: center;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    
+}  
+
+.camperab3{
+    background-image: url(./image/campera3.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-x: center;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+} 
+
+.camperab4{
+    background-image: url(./image/campera4.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-x: center;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+} 
+
+.camperab5{
+    background-image: url(./image/campera5.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-x: center;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+} 
+
+.camperab6{
+    background-image: url(./image/campera6.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-x: center;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+} 
+
+.camperab7{
+    background-image: url(./image/campera7.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-x: center;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+} 
+
+.container .parte2{
+    height: 30vh;
+    justify-content: space-around;
+}
+
+.segunda .r1 .col{
+    height:50px;
+    width: 50px;
+}
