@@ -156,3 +156,8 @@ align-items: center;
     color:green;
    
 }
+
+footer .container{
+    background-color: #c886e9!important;
+    margin-top: 15px;
+}
