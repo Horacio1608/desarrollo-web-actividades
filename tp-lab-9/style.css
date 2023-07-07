@@ -1,98 +1,158 @@
 
 
 .container-fluid img{
-    height: 10vh;
+    height: 8vh;
     
+}
+
+.redes-sociales{
+    top:25%;
+    background-color: rgba(119, 136, 153, .5);
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    padding: 10px;
+}
+
+.redes-sociales ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.redes-sociales ul li a i{
+    font-size: 30px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color:white;
+}
+
+.redes-sociales ul li a i:hover{
+    color:blueviolet;
+}
+
+
+.nav-link{
+    color:black !important;
+    font-weight: bolder !important;
+}
+
+.nav-link:hover{
+    color: blueviolet !important;
 }
 
 .row .r1{
     display: flex;
     justify-content: space-around;
 }
-.campera{
-    background-image: url(./image/campera.jpg);
+
+.row1{
+    margin-top: 15px;
+}
+.carousel-item{
     background-repeat: no-repeat;
     background-size:contain;
     background-position-x: center;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items:center ;
+    height: 60vh !important;
+   
 }
 
-.camperab2{
-    background-image: url(./image/campera2.jpg);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position-x: center;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items:center ;
+.carousel-indicators button{
+    height: 15px !important;
+    width: 15px !important;
+    border-radius: 50% !important;
+    background-color: darkorchid !important;
+}
+
+.visually-hidden{
+    color: darkorchid !important;
+}
+
+.colheight{
+    border: none;
+}
+.colheight img{
+    height: 30vh;
+
+}
+
+.colheight:hover a.btn{
+    display: inline-block!important;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    color: red!important;
+}
+
+.colheight:hover{
+    cursor: pointer;
     
-}  
-
-.camperab3{
-    background-image: url(./image/campera3.jpg);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position-x: center;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items:center ;
-} 
-
-.camperab4{
-    background-image: url(./image/campera4.jpg);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position-x: center;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items:center ;
-} 
-
-.camperab5{
-    background-image: url(./image/campera5.jpg);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position-x: center;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items:center ;
-} 
-
-.camperab6{
-    background-image: url(./image/campera6.jpg);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position-x: center;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items:center ;
-} 
-
-.camperab7{
-    background-image: url(./image/campera7.jpg);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position-x: center;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items:center ;
-} 
+}
 
 .container .parte2{
-    height: 30vh;
+ 
     justify-content: space-around;
+    margin: 20px; 
+    height: auto;
 }
 
 .segunda .r1 .col{
     height:50px;
     width: 50px;
+}
+
+.card-2-sec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-2-sec .col-3 .card-body .card-title{
+    text-align: center;
+}
+
+.card-img-top3{
+    width: 286px;
+    height: 134px;
+}
+.text-3-sec{
+    text-align: center;
+}
+
+.card3sec{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.card-title3{
+    text-align: center;
+    color: green;
+}
+
+.textbold{
+    font-weight: bold!important ;
+    font-size: medium;
+    text-align: center;
+}
+.img-flyer{
+    padding: 0px;
+    width: 90%;
+}
+.img-mini-flyer{
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+}
+.carousel-indicatorsM img{
+POSITION: RELATIVE;
+JUSTIFY-CONTENT: LEFT;
+HEIGHT: 50PX;
+padding: 0px;
+border: 0px;
+align-items: center;
+}
+
+.tarjetam h6{
+    color:green;
+   
 }
