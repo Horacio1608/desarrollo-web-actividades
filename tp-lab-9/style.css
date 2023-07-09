@@ -11,6 +11,7 @@
     border: none;
     border-radius: 0px 5px 5px 0px;
     padding: 10px;
+    z-index:500;
 }
 
 .redes-sociales ul{
@@ -43,6 +44,8 @@
 .row .r1{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    justify-content: center;
 }
 
 .row1{
@@ -52,7 +55,8 @@
     background-repeat: no-repeat;
     background-size:contain;
     background-position-x: center;
-    height: 60vh !important;
+    width: 100%!important;
+    max-height: 60vh !important;
    
 }
 
@@ -71,8 +75,8 @@
     border: none;
 }
 .colheight img{
-    height: 30vh;
-
+    width: 100% !important;
+    height: auto!important;
 }
 
 .colheight:hover a.btn{
@@ -104,6 +108,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
+}
+.card-2-sec div{
+    padding-top: 10px;
 }
 
 .card-2-sec .col-3 .card-body .card-title{
@@ -113,6 +121,7 @@
 .card-img-top3{
     width: 286px;
     height: 134px;
+    margin-top: 10px
 }
 .text-3-sec{
     text-align: center;
@@ -120,8 +129,16 @@
 
 .card3sec{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 15px;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.card3sec img{
+    height: auto;
+    width: 100%;
 }
 
 .card-title3{
@@ -157,7 +174,12 @@ align-items: center;
    
 }
 
-footer .container{
+footer .container-fluid{
     background-color: #c886e9!important;
     margin-top: 15px;
+    
+}
+
+.btn-group button{
+    padding: 5px;
 }
