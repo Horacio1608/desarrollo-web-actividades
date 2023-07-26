@@ -1,0 +1,73 @@
+    main{
+        margin:auto;
+        width:90vw;
+        height:100vh;
+    }
+ header h1{
+    text-align: center;
+    color: blueviolet;
+ }
+.item, .listado{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    border: 1px solid black;
+    color: black;
+    border-radius: 5px;
+    background-color: lightblue;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.item-numero, .orden-item{
+    color: black;
+    font-weight: bolder;
+    flex-basis: 149px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+.item-descripcion, .lista-item{
+    flex-basis: auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.item button, .listado button{
+    flex-basis: 99px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.item button:hover{
+    cursor: pointer;
+    background-color: darkslategrey;
+}
+
+.listado button:hover{
+    background-color: red;
+    color:azure;
+    cursor:pointer;
+}
+
+#texto{
+    width: 68vw;
+    height: 8vh;
+    border: none;
+    background-color: lightblue;
+}
+
+#texto:hover{
+    cursor: pointer;
+    border: none;
+}

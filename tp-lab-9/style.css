@@ -153,13 +153,21 @@
 }
 .img-flyer{
     padding: 0px;
-    width: 90%;
+    max-width: 537px;
+    max-height: 377px;
+    flex: 1 1 auto!important;
+}
+
+.cont-mini-flyer{
+    padding: 0!important;
 }
 .img-mini-flyer{
     height: 100%;
     width: 100%;
-    padding: 0px;
+    padding: 0px!important;
+    flex: 1 1 auto!important;
 }
+
 .carousel-indicatorsM img{
 POSITION: RELATIVE;
 JUSTIFY-CONTENT: LEFT;
