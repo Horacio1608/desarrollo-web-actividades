@@ -30,8 +30,10 @@ console.log(array2);
  * find() => busca el primera coincidencia y devuelve un array
  * findIndex() devuel el indice (pos) de la primera coincidencia
  * includes(valor) // devuelve un valor verdadero o falso de valor
- * indexOf(valor) //devuelve la pos del elemento (su primera coincidencia) buscado, si no esta devuelve -1
- * lastIndexOf(valor) //devuelve la pos del elemento (su primera coincidencia) buscado, si no esta devuelve -1
+ * indexOf(valor) //devuelve la pos del elemento (su primera coincidencia) buscado, 
+    si no esta devuelve -1
+ * lastIndexOf(valor) //devuelve la pos del elemento (su primera coincidencia) buscado,
+     si no esta devuelve -1
  */
  console.log(array2.includes("agrego")); //devuelve true o false
  console.log(array2.indexOf("agrego"));  //devuelve la posicion si no regresa -1
