@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: auto;
+    background-color: rgb(148, 148, 143);
+}
+
+main{
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.opciones{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 90%;
+  flex-wrap: nowrap;
+  BORDER: 1px solid rgb(61, 3, 58);
+  border-radius: 10px;
+  background-color: rgb(223, 187, 89);
+}
+
+.opcion{
+  display: flex;
+  
+  border: 1px solid black;
+  border-radius: 10px;
+   width: 90%;
+  height: 40px;
+  color: black;
+  font-weight: bolder;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.opcion:hover{
+  background-color: aquamarine;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.button{
+  display: flex;
+  background-color: rgb(115, 245, 115);
+  border: 1px solid black;
+  border-radius: 50px;
+   width: 90%;
+  height: 30px;
+  color: black;
+  font-weight: bolder;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.button:hover{
+  background-color: rgb(3, 77, 3);
+  color:white;
+  cursor: pointer;
+}
+.tablero{
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  height: 90%;
+  border: 1px solid rgb(61, 3, 58);
+  border-radius: 10px;
+  background-color: rgb(223, 187, 89);
+}
+
+.cartas{
+  width: 9%;
+  height: 20%;
+  border: 1px solid black;
+  border-radius: 3px;
+  /*background-image: url(./image/fondocarta.jpg);*/
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  
+}
+.reverso{
+  background-image: url(./image/fondocarta.jpg);
+}
+.resaltar{
+  background-color: aquamarine;
+}
+
+.cartas:hover{
+  cursor: pointer;
+}
+
+#cartas1, #cartas2{
+  background-image: url(./image/elefante.jpg);
+}
+
+#cartas3, #cartas4{
+  background-image: url(./image/flamenco.jpg);
+}
+
+#cartas5, #cartas6{
+  background-image: url(./image/gallo.jpg);
+}
+
+#cartas7, #cartas8{
+  background-image: url(./image/gato.jpg);
+}
+
+#cartas9, #cartas10{
+  background-image: url(./image/leon.jpg);
+}
+
+#cartas11, #cartas12{
+  background-image: url(./image/tucan.jpg);
+}
+
+#cartas13, #cartas14{
+  background-image: url(./image/venado.jpg);
+}
+
+#cartas15, #cartas16{
+  background-image: url(./image/);
+}
+
+#cartas17, #cartas18{
+  background-image: url(./image);
+}
+
+#cartas19, #cartas20{
+  background-image: url(./image/);
+}
