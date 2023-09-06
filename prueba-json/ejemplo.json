@@ -1,0 +1,19 @@
+"nombre": "ejemplo",
+	"empleados": {
+		"nombre": "juan",
+		"apellido": "perez"
+	},
+	"empleados": {
+		"nombre": "juan",
+		"apellido": "perez"
+	},
+	"empleados": {
+		"nombre": "juan",
+		"apellido": "perez"
+	},
+	"empleados": {
+		"nombre": "juan",
+		"apellido": "perez"
+	},
+	"empleado": ["hola", "dos", "tres"]
+}
