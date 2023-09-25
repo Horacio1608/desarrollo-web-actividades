@@ -9,7 +9,7 @@ export default function home() {
     }
 
     return (
-        <div className="p-5">
+        <div className="p-6">
             Pagina de Home
         </div>
     )
