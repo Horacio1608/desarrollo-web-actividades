@@ -4,7 +4,7 @@ import { PencilIcon,TrashIcon } from '@heroicons/react/24/solid'
 
 export const TableList = ({listContact}) => {
     return (<>
-        <table className="w-full text-gray-500">
+        <table className="w-full text-gray-600">
             <thead className="bg-gray-50 text-gray-700 uppercase">
                 <tr>
                     <th>First Name</th>
