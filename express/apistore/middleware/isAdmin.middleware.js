@@ -9,4 +9,4 @@ const isAdmin = (req,res,next)=>{
     }
 }
 
-module.export = isAdmin;
+module.exports = isAdmin;
