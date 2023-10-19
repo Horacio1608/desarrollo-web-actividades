@@ -32,3 +32,6 @@ module.exports = {
     await queryInterface.dropTable('Users');
   }
 };
+
+
+//**11/10  *  18.56**
