@@ -10,9 +10,12 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       code: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        unique: true,
+        allowNull: false,
       },
       date_purchase: {
+        allowNull: false,
         type: Sequelize.DATE
       },
       iva: {
@@ -25,7 +28,11 @@ module.exports = {
         type: Sequelize.FLOAT
       },
       client_id: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references:{
+          model:'clients',
+          key:'id'
+        }
       },
       createdAt: {
         allowNull: false,

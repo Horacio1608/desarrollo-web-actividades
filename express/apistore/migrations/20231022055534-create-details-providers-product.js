@@ -10,10 +10,17 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       provider_id: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references:{
+          model:'providers',
+          key:'id'
+        }
       },
       products_id: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references:{
+          model:'products',
+          key:'id'}
       },
       createdAt: {
         allowNull: false,
@@ -28,4 +35,7 @@ module.exports = {
   async down(queryInterface, Sequelize) {
     await queryInterface.dropTable('details_providers_products');
   }
-};
+}
+
+
+

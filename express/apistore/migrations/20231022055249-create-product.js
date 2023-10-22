@@ -10,22 +10,28 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       code: {
-        type: Sequelize.STRING
+        allowNull: false,
+        type: Sequelize.STRING(50)
       },
       name: {
-        type: Sequelize.STRING
+        allowNull: false,
+        type: Sequelize.STRING(200)
       },
       description: {
+        allowNull: false,
         type: Sequelize.TEXT
       },
       amount: {
+        allowNull: false,
         type: Sequelize.FLOAT
       },
       stock: {
+        allowNull: false,
         type: Sequelize.INTEGER
       },
       photo: {
-        type: Sequelize.STRING
+        allowNull: false,
+        type: Sequelize.STRING(45)
       },
       createdAt: {
         allowNull: false,

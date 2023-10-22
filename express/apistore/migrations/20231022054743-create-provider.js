@@ -10,22 +10,23 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       cuit: {
-        type: Sequelize.STRING
+        unique:true,
+        type: Sequelize.STRING(45)
       },
       business_name: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(45)
       },
       email: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(45)
       },
       phone: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(45)
       },
       address: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(45)
       },
       code_postal: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(10)
       },
       createdAt: {
         allowNull: false,

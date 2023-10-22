@@ -10,13 +10,19 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       email: {
+        unique:true,
+        allowNull: false,
         type: Sequelize.STRING
       },
       password: {
         type: Sequelize.TEXT
       },
       active: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references:{
+          model:'clients',
+          key:'id'
+        }
       },
       type_user: {
         type: Sequelize.INTEGER
