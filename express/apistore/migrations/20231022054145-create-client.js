@@ -10,13 +10,16 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       dni: {
+        allowNull: false,
+        unique:true,
         type: Sequelize.INTEGER
       },
       name: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(45)
+
       },
       last_name: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(45)
       },
       email: {
         type: Sequelize.STRING
