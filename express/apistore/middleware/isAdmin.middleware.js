@@ -1,5 +1,3 @@
-// middleware == control de acceso
-
 const isAdmin = (req, res, next)=>{
     if(req.body.isAdmin){
         next();

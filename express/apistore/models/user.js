@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
     password: DataTypes.TEXT,
     active: DataTypes.INTEGER,
     type_user: DataTypes.INTEGER,
-    client_id: DataTypes.INTEGER
+    clients_id: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'user',

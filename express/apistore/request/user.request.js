@@ -1,5 +1,3 @@
-//validamos el email
-
 const Joi = require('joi');
 const validateRequest = require('../middleware/validateRequest');
 const { EmailEmpty, EmailError } = require('./validate_constant'); 

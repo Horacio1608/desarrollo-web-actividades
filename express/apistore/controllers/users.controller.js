@@ -1,10 +1,3 @@
-//controler se encarga de la parte logica
-
-/*
-@params req => url dinamicas, query params, body params only(post, put, patch)
-@params res => respuesta del servidor al cliente (201: created), 409 conflicto en el registro y etc.
-*/
-
 const products = [
     {
       id: 1,

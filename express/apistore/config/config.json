@@ -2,7 +2,7 @@
   "development": {
     "username": "ejemplo",
     "password": "ejemplo1234",
-    "database": "api_store_2a",
+    "database": "api_store_2A",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },

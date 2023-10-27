@@ -1,5 +1,3 @@
-//middleware para validar errores
-
 const validateRequest = (req,resp,next,schema) =>{
     const options ={
         stripUnknown:true,
