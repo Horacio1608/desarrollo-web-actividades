@@ -2,7 +2,7 @@ const express = require('express'); // contiene todas las funciones
 const app = express(); // instancio express
 const bodyParser = require('body-parser');
 const isAdmin = require('./middleware/isAdmin.middleware');
-const port = 3500; //https://localhost:3500
+const port = 3000; //https://localhost:3500
 
 app.use(bodyParser.json);
 app.use(bodyParser.urlencoded({extended:true}));
