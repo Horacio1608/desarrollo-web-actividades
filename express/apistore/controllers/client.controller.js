@@ -88,4 +88,4 @@ const updateClient = async (req, resp) => {
 
 }
 
-module.exports = { getAllClients, postCreateClient, deleteClient, updateClient }
+module.exports = { getAllClients, postCreateClient, deleteClient, updateClient };
